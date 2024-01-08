@@ -9,7 +9,7 @@ payload = {
 
 }
 
-response = requests.post(url, data=payload)
+response = requests.post(url, json=payload)
 
 if response.status_code == 200:
     print('Request successful!')
